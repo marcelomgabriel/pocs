@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://br/com/itau/domain" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://br/com/itau/domain" xmlns:jrb="http://jrecordbind.org/3/xsd" elementFormDefault="qualified">
+    <xs:complexType name="TraillerDomain">
+        <xs:sequence>
+            <xs:element name="mti" type="xs:string" jrb:length="4"/>
+            <xs:element name="bitMap" type="xs:string" jrb:length="16"/>
+            <xs:element name="functionCode" type="xs:string" jrb:length="3"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="main" type="TraillerDomain" jrb:length="23"/>
+</xs:schema>
+
